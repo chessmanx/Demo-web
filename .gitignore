@@ -1,0 +1,27 @@
+node_modules/
+fabric-ai-backend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*
+cert.pem
+key.pem
+*.pem
+dev.db
+*.sqlite
+dist/
+build/
+.DS_Store
+.vscode/
+.idea/
+__pycache__/
+/.cache/
+/.parcel-cache/
+.sass-cache/
+coverage/
+/.next/
+*.log
+
+# If your model weights are large consider using Git LFS for the contents of `my_model`
+# my_model/weights.bin

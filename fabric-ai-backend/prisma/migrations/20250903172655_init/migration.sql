@@ -1,0 +1,8 @@
+-- CreateTable
+CREATE TABLE "Prediction" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "fileName" TEXT NOT NULL,
+    "label" TEXT NOT NULL,
+    "score" REAL NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,21 @@
+// Prisma schema definition for storing predictions.  This schema
+// configures Prisma to use SQLite by default.  If you wish to use
+// Postgres or another database, change the provider and
+// DATABASE_URL accordingly.
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Prediction {
+  id        Int      @id @default(autoincrement())
+  fileName  String
+  label     String
+  score     Float
+  createdAt DateTime @default(now())
+}
